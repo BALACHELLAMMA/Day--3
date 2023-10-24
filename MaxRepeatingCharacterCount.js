@@ -9,20 +9,18 @@ function findMaxRepeatingCharacter(inputArray){
 
     let maxCount = 0;
     let currentCount =0;
-    let maxCharacter ='';
+    let maxCharacter = '';
     let currentCharacter = '';
      
 
     for (let index=0; index < inputArray.length; index++){
-        currentCharacter = inputArray[index];
 
-        if (currentCharacter === maxCharacter){
+        if (inputArray[index] === currentCharacter){
             currentCount++;
         }
         else{
-            maxCharacter = currentCharacter;
-            maxCount = 1;
             currentCount =1;
+            currentCharacter = inputArray[index]
         }
 
         if(maxCount < currentCount){
