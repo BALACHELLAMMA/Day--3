@@ -5,6 +5,8 @@
 // since a has more repeating simaltaneously
 
 function findMaxRepeatingCharacter(inputArray){
+    if(typeof inputArray !=='string' || inputArray.length==0) return 'invalid array';
+
     let maxCount = 0;
     let currentCount =0;
     let maxCharacter = '';
@@ -32,3 +34,8 @@ function findMaxRepeatingCharacter(inputArray){
 
 const array = "traaainngfornewbie";
 console.log(findMaxRepeatingCharacter(array));
+
+// console.log(findMaxRepeatingCharacter(null));
+// console.log(findMaxRepeatingCharacter(''));
+// console.log(findMaxRepeatingCharacter(true));
+
