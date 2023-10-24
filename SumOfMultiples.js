@@ -6,7 +6,9 @@
 function sumOfMultiples(number, mutlipleCount){
 
     if (typeof number!=='number' || typeof mutlipleCount!=='number') return 'Invalid Number or mutliple count'
+
     if (number <=0 || mutlipleCount <=0) return 'number or mutliple count should not be less than zero or equal to zero'
+
     let sum = 0;
     
     for (let multiple=1; multiple<=mutlipleCount; multiple++){
