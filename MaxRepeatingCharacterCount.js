@@ -25,10 +25,13 @@ function findMaxRepeatingCharacter(inputArray){
             currentCount =1;
         }
 
-        maxCount = maxCount < currentCount ? currentCount : maxCount;
+        if(maxCount < currentCount){
+            maxCount = currentCount;
+            maxCharacter = currentCharacter;
+        }
     }
 
-    return result;
+    return maxCharacter;
 }
 
 const array = "traaainngfornewbie";
