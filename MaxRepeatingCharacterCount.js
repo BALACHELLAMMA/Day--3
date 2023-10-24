@@ -5,8 +5,6 @@
 // since a has more repeating simaltaneously
 
 function findMaxRepeatingCharacter(inputArray){
-    const result='';
-
     let maxCount = 0;
     let currentCount =0;
     let maxCharacter = '';
